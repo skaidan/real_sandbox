@@ -12,7 +12,7 @@
         fi
         docker build -t real_sandbox .
         docker run -d -p 50000:50000  --name real_sandbox  real_sandbox
-        echo "All done! Enter here: https://localhost:50000/"
+        echo "All done! Enter here: http://localhost:50000/"
         while true
         do
             docker logs real_sandbox
